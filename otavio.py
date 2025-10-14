@@ -1,369 +1,115 @@
-# numero = 50 
-# numero = 50 
-# print(numero + numero)
+# ---------------------------------------------------------------------------------------------------------
 
+# Aula 12 - Classes e objetos 
 
+# Liguagem de auto nivel. 
+# - Mais próximas da linguagem do usuario. 
 
+# Linguagem de baixo nivel  
+# Mais proximo da linguagem do computador. 
 
-# variaves 
 
-# idade = "dez" 
-# print(idade)
+# class Cachorro:
+#     raca = 'Bulldog'
+#     cor = 'caramelo'
+#     tamanho = 'pequeno'
+#     cor = 'caramelo'
 
-# - se for umar e so tirar (#)
+#     def latir(self): 
+#         print("Au")
 
-# 3 regras 
+#     def correr(self):
+#         print(' correndo...')            
 
-# 1 - nao pode cinter simbolos 
-# 2 - nao pode inciar com numero
-# 3 - uma variavel nao pode ter espacos - use o (_)
-# para separar as palavras 
+# Atibutos  --> Variáves que guardam informações de uma classe.
+# Métodos -->Funções dentro de uma classe.
 
+# class Carro: 
+#     rodas = '4'
+#     cor = 'roxo'
+#     marca = 'fiat'
+#     modelo = 'uno'
 
-# nomeDoUsuario = "pedro"
+#     def ligar(self):
+#         print('carro ligado')
 
+#     def desligar():
+#         print('correndo')
 
-# frase = ' Ola ' + ' tudo bem?'
- 
-#frase1 = 'como voce estar?\n'
-#frase2 = 'Eu estou bem!\n'
-#frase3 = 'como vai sua familia?\n'
-#frase4 = 'vai bem!'
-#print(frase1 + frase2 + frase3 + frase4)
 
-#palavra = familia 
+# class Celular: 
+    # capinha =  'azul' 
+    # marca = 'Motorola'
+    # camera = '34px'
+#     tamanho = '20x10'
+#     modelo = 'G24' 
 
+#     def ligar(self):
+#         print('celular ligado') 
 
+#     def desligar(self):
+#         print('Celular desligado') 
 
+#     def som_do_alarme(self):
+#         print('fruunnn')
 
 
-#email = 'pedro@gmail.com'
-#posicao = email.find('@')
-#posicao_final = email.find ('.')
-#print(email[posicao + 1:posicao_final])
 
-# input 
+# meu_celular = Celular()
 
-#nome = input('digite seu nome\n')
-#print(' ola, '+ nome +'!') 
+# meu_celular.ligar()
 
+# meu_celular.desligar()
 
+# meu_celular.som_do_alarme()
 
-# nome = input('qual e o seu nome? \n')
-# print('nome legal, e comum.')
 
 
-# len 
-# frase = 'qual e o seu nome?'
-# print(len(frase))
+# Metodo constutor / Metodo inicializador 
 
-# # cont - conta quanta vezes algo  aparece na string
-# # len() - retorna o comprimento de uma string
 
-# print(frase.count ('-'))
+# class Pessoa: 
 
+#     def __init__(self, nome, altura, idade):
+#         self.nome = nome 
+#         self.idade = idade 
+#         self.altura = altura  
+#         pass
 
-# ----------------------------------------------------------------------------------
 
-# resumo da aula 5 - ( Estruturas de repedição ) 
+#     def andar(self):
+#         print('andando') 
 
-
-# lista_de_numeros = [ 1, 2, 3, 6,]
-# print(lista_de_numeros[0])
-# print(lista_de_numeros[1])
-# print(lista_de_numeros[3])
-
-# for item in lista_de_numeros:
-#     print(lista_de_numeros)
-
-# v = 0 
-# while v < 10: 
-#     print(v)
-#     v += 1
-
-# Break - Continue - Pass
-
-
-# jogos = ['FIFA', 'minecraft', 'gta 5']
-
-
-# Tuplas 
-
-# numeros = (1, 2, 3, 4,)
-
-# meses = ('janeiro', 'fevereiro', 'abril')
-
-# len - Retorna o tamanho de uma string.
-# count - conta quantaves vezes um detrerminado elemento que aparece na lista. 
-# index - Retorna um a posição de um determinado elemento
-
-# conjuntos(Sets)
-
-# set() - lista de elementos únicos. 
-
-
-# ---------------------------
-
-# aula  6 
-
-
-# numeros = set()
-
-
-# numeros.add(3)
-# numeros.add(4)
-# numeros.add(5)
-# numeros.add(3)
-
-# print(numeros)
-
-
-# listas [] - tuplas () - sets {}
-
-
-# Booleanos - Tipo logico que so aceita dois valores: verdadeiro ou falso.
-
-# dicionarios - (conhecido em objeto em outras linguagens)
-# estrutura que armazena uma chave e um velor. 
-
-# pessoas = {
-#     'nome': 'otavio',
-#     'idade': '14', 
-#     'altura': '1.62'
-# }
-
-# print(pessoas['altura'])
-# print(pessoas['idade'])
-# print(pessoas['nome'])
-
-
-# carro = { 
-#     'cor': 'azul', 
-#     'motor': "V-8",
-#     "marca": 'bugatti',
-#     "valor": '400.000'
-# }
-
-# nova_chave = input('O que você gostasria de adiciomal no carro? /n--->' )
-# nova_valor = input('Qual o valor referente a chave '+ nova_chave +'? /n -->')  
-
-# exercio 
-
-# numeros_aleatorios = [ 1, 2, 3, 4, 4, 5, 6, 6, 7, 8] 
-
-# numeros_certos = set()
-
-# for numeros in 
-
-
-
-# keys - apresenta todas as chaves do dicionarios. 
-# values - apresenta todos os valores armazanados. 
-# itens - apresenta ambos. 
-
-# livro = {
-#  'titulo': 'pequeno pricipe',
-#  ' autor': 'tananana',
-#  'ano': 1996
-# }
-
-# print(livro.keys())
-# print(livro.values())
-# print(livro.items())
-
-
-# Exercio 2 - 
-
-
-
-# ddd_e_estados = {
-#     '61': ' Brasilia',
-#     '21': 'Rio de Janeiro',
-#     '11': 'São Paulo', 
-#     '32': 'Juiz de Fora', 
-#     '19': 'Campinas'
-# }
-
-
-# ------------------------------------------------------------------------------------------------------
-
-# Aula 7 - Funções 
-
-
-#  Criando funções - 
-# Para declarar uma função utilizarmos a palavra reservada: def 
-
-
-# def nome_da_função():
-#     # codigo a se executado 
-#     pass 
-
-# # chamando a função 
-# nome_da_função() 
-
-
-
-# função de boas-vindas 
-
-
-# def boas_vindas():
-#     print('Seja bem vindo!')
-
-#     boas_vindas()
-
-
-# # Função com parametros 
-
-# def boas_vindas_usuario(nome): 
-#      print('Seja bem-vindo ' + nome)
-
-# boas_vindas_usuario('Paulo')
-# boas_vindas_usuario('Maria')
-
-# Parametros são valores passado de fora para dentro de uma função. 
-
- # Exercios - 
-
-# def bem_vindo_ao_new_cronos(nome)
-#      print('bem vindo ao new cronos ' + nome)
-
-# bem_vindo_ao_new_cronos('Gabriel') 
-
-# X = input('Digite um valor ?n --->')
-# Z = input('Digite o outro valor /n -->')
-
-# def velociade(distância, tempo):
-
-#    print( distância + tempo  ) 
-
-
-# velociade( X , Z )
-
-
-
-#  * Argument
-
-# def prepara_açai(*itens , tamanho): 
-#     print('/n preparando um açai de' ,  tamanho, 'com os seguintes ingrediente:')
-
-#     for ingrediente in itens:
-#         print('-' , ingrediente )
-
-# prepara_açai('Amendoim', 'leite em pó', 'jujuba', 'morango', tamanho = '700ml') 
-# prepara_açai('granulado', 'limão', temanho = '1l' ) 
- 
-
-# Função queretorna valores
-# Para retornar um valor usamos a plavras reservadas: return 
-
-# def diminuir(a , b):
-#     return a - b 
-
-# resultado = diminuir(5 , 2)
-
-# print(' O resultado da subtração e ' , resultado) 
-
-
-#  Função recursivas - 
-# A função que chama ela mesma ate que um problema seja resolvido. 
-# def dobrar_lencol(lencol , gaveta): 
-#     if lencol < gaveta: 
-#         return 0 
-#     else: 
-#         return 1 + dobrar_lencol(lencol /2 ,  gaveta )
+#     def getinformacoes(self):
+#         info = f'Nome: {self.nome}, idade: {self.idade}, altura {self.altura}'
+#         return info
     
-# print(dobrar_lencol(200, 25)) 
-
-# Tipo de dado -- none --> nada 
-
-# ---------------------------------------------------------------------------------------------------
-
-# Aula 8 - arquivos 
-
-# Abrindo arquivos 
-
-# open - Abre o arquivo. Recebe o caminho como parâmetro 
+#     def setDataDeNascimento(self, data): 
+#         self.setDataDeNascimento = data
+        
 
 
+# getter e setters
+
+# Getter --> usado para pegar informações de uma classe. 
+
+#Setters --> usado para definir uma informação de uma classe.  
 
 
-
-# # Lendo arqiuvo 
-# # read() - Lê o arquivo ( Não mostra no terminal )
-
-# print(arquivo.read()) 
-
-# # seek(0) - Volta o ponteiro para o inicio do arquivo 
-# arquivo.seek(0)
-
-
-# print(arquivo.read())
-
-
-
-# # readline ()-  Le as linhas do arquivo.
-
-# print(arquivo.readline())
-# print(arquivo.readline())
-# print(arquivo.readline()) 
-
-# Lendo arquivos com o loop for 
-
-# for i , linha in (arquivo):
-#     print(f'Linha {i} - {linha}')
-
-
-# Escrevendo em um arquivo 
-
-# write() - Função uasada para escrever em um arquivo
-
-# arquivo.write('Testando arquivo')
-# # close() - fecha o arquivo 
-# arquivo.close()
-
-# exercio 1 
-
-# def guardar_nome(nome): 
-#     with open('./pritica.txt' , 'a') as arquivo: 
-#         arquivo.write(nome + '/n')
-#     print(' O nome foi adicionado com sucesso') 
-
-# nome = input(' Digite o nome do usuario /n --->')  
+# Exercicio 1 
  
+class Gato: 
+    
+    def __init__(self, nome, cor, data_de_nascimento):
+        self.nome = nome
+        self.cor = cor
+        self.data_de_nascimento = data_de_nascimento 
 
-# ------------------------------------------------------------------------------------------------------------------
-# Aula 9 - Modulos 
+    def getinformacoes(self):
+        info = f'Nome: {self.nome}, cor: {self.cor}, data_de_nascimento: {self.data_de_nascimento}' 
+        return info 
+    
+    def sethumor(self, humor): 
+        self.humor = humor
 
-# oque sao modulos? 
-
-
-
- # import - comando ultilizado para importar um modulo   
-
-# 1 importando o modulo Math 
-
-# import math  
-
-# # função pow - potenciação 
-
-# print(math.pow(2 , 3))
-
-# # Arredondando valores - 
-# # Ceil - Arrendondando pra cima.
-# print(math.ceil(2.7))
-# # trunc - Arredondando pra baixo 
-# print(math.trunc(2.3))
-
-# # round - função nativa do pyton - Arredonda pra o inteiro mais proximo. 
-# print(round(2.6))
-# print(round(2.5))
-
-# ------------------------------------------------------------------------------------------
-
-# aula 10 - competição 
-
-
-# exercios 3 - 
-
-
-# -------------------------------------------------------------------------------------------------------
+meu_gato1 = Gato('Luna, amarelo, 18 de maio 2025 ')
